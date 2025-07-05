@@ -16,14 +16,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">GF</span>
-            </div>
-            <div>
-              <h1 className="font-bold text-xl text-blue-900">GEMINI FUSION</h1>
-              <p className="text-xs text-blue-600 -mt-1">SPACE</p>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/f23d872e-b5ee-4221-b32c-de3e577a55e6.png" 
+              alt="Gemini Fusion Space Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -32,10 +30,10 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-700 hover:text-blue-900 font-medium transition-colors duration-300 relative group"
+                className="text-gray-700 hover:text-emerald-700 font-medium transition-colors duration-300 relative group"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </nav>
@@ -57,7 +55,7 @@ const Header = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-left text-gray-700 hover:text-blue-900 font-medium transition-colors duration-300"
+                  className="text-left text-gray-700 hover:text-emerald-700 font-medium transition-colors duration-300"
                 >
                   {item}
                 </button>

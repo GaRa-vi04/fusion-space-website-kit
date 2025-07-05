@@ -33,19 +33,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-blue-900 text-white">
+    <footer className="bg-emerald-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-400 rounded-lg flex items-center justify-center">
-                <span className="text-blue-900 font-bold text-lg">GF</span>
-              </div>
-              <div>
-                <h3 className="font-bold text-xl">GEMINI FUSION</h3>
-                <p className="text-xs text-yellow-400 -mt-1">SPACE</p>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/f23d872e-b5ee-4221-b32c-de3e577a55e6.png" 
+                alt="Gemini Fusion Space Logo" 
+                className="h-12 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Transforming spaces into masterpieces through innovative design, sustainable practices, and exceptional craftsmanship.
@@ -56,7 +54,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="bg-blue-800 hover:bg-yellow-500 hover:text-blue-900 p-3 rounded-lg transition-all duration-300 transform hover:scale-110"
+                  className="bg-emerald-800 hover:bg-orange-400 hover:text-emerald-900 p-3 rounded-lg transition-all duration-300 transform hover:scale-110"
                 >
                   <social.icon size={20} />
                 </a>
@@ -66,13 +64,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-yellow-400">Quick Links</h4>
+            <h4 className="font-bold text-lg mb-6 text-orange-300">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <button
                     onClick={link.action}
-                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 hover:translate-x-1 transform inline-block"
+                    className="text-gray-300 hover:text-orange-300 transition-colors duration-300 hover:translate-x-1 transform inline-block"
                   >
                     {link.name}
                   </button>
@@ -83,11 +81,11 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-yellow-400">Our Services</h4>
+            <h4 className="font-bold text-lg mb-6 text-orange-300">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-gray-300 hover:text-yellow-400 transition-colors duration-300">
+                  <span className="text-gray-300 hover:text-orange-300 transition-colors duration-300">
                     {service}
                   </span>
                 </li>
@@ -97,10 +95,10 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-yellow-400">Contact Info</h4>
+            <h4 className="font-bold text-lg mb-6 text-orange-300">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-orange-300 mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
                   123 Design Avenue<br />
                   Creative District<br />
@@ -108,11 +106,11 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-orange-300 flex-shrink-0" />
                 <span className="text-gray-300">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-yellow-400 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-orange-300 flex-shrink-0" />
                 <span className="text-gray-300">hello@geminifusionspace.com</span>
               </div>
             </div>
@@ -121,20 +119,20 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-blue-800">
+      <div className="border-t border-emerald-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2024 Gemini Fusion Space. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+              <a href="#" className="text-gray-400 hover:text-orange-300 transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+              <a href="#" className="text-gray-400 hover:text-orange-300 transition-colors duration-300">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+              <a href="#" className="text-gray-400 hover:text-orange-300 transition-colors duration-300">
                 Cookie Policy
               </a>
             </div>

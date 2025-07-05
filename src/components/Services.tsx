@@ -48,10 +48,10 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4">
               Our Services
             </h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-orange-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive design and construction services to bring your vision to life with exceptional quality and attention to detail.
             </p>
@@ -66,12 +66,12 @@ const Services = () => {
               >
                 <div className="p-8">
                   {/* Icon */}
-                  <div className="bg-gradient-to-br from-blue-900 to-blue-700 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-emerald-700 to-emerald-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-blue-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-emerald-800 mb-4 group-hover:text-emerald-700 transition-colors duration-300">
                     {service.title}
                   </h3>
                   
@@ -83,7 +83,7 @@ const Services = () => {
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center space-x-3 text-gray-700">
-                        <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
@@ -91,7 +91,7 @@ const Services = () => {
                 </div>
 
                 {/* Hover Effect */}
-                <div className="h-1 bg-gradient-to-r from-blue-900 to-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                <div className="h-1 bg-gradient-to-r from-emerald-700 to-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </div>
             ))}
           </div>

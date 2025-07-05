@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
@@ -36,7 +35,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Our Studio',
-      info: '123 Design Avenue, Creative District, New York, NY 10001'
+      info: 'B-515 Apurupa Jagapathi Heights,\nAdarsh Nagar, Uppal, Hyd -500039'
     },
     {
       icon: Phone,

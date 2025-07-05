@@ -100,9 +100,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-orange-300 mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  123 Design Avenue<br />
-                  Creative District<br />
-                  New York, NY 10001
+                  B-515 Apurupa Jagapathi Heights
                 </span>
               </div>
               <div className="flex items-center space-x-3">
